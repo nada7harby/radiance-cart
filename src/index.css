@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 180 8% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 180 8% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 8% 15%;
+
+    /* Primary brand color - Teal #006A67 */
+    --primary: 179 100% 20.8%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Light teal for hover states */
+    --primary-light: 179 100% 30%;
+
+    /* Secondary - Soft gray */
+    --secondary: 180 5% 96%;
+    --secondary-foreground: 180 8% 15%;
+
+    /* Muted backgrounds */
+    --muted: 180 10% 95%;
+    --muted-foreground: 180 5% 45%;
+
+    /* Accent - Light teal */
+    --accent: 179 50% 92%;
+    --accent-foreground: 179 100% 20.8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 10% 90%;
+    --input: 180 10% 90%;
+    --ring: 179 100% 20.8%;
+
+    --radius: 0.5rem;
+
+    /* Success color for cart actions */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Gradient for hero sections */
+    --gradient-hero: linear-gradient(135deg, hsl(179 100% 20.8%) 0%, hsl(179 100% 30%) 100%);
+    
+    /* Subtle background gradient */
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(180 10% 98%) 100%);
+  }
+
+  .dark {
+    --background: 180 15% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 180 10% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 180 10% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 179 100% 35%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-light: 179 100% 45%;
+
+    --secondary: 180 10% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 180 10% 20%;
+    --muted-foreground: 180 5% 65%;
+
+    --accent: 179 50% 20%;
+    --accent-foreground: 179 100% 70%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 10% 20%;
+    --input: 180 10% 20%;
+    --ring: 179 100% 45%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
